@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 
 const PartnersSection = () => (
-  <section id="partners" className="pt-24 pb-20 bg-white overflow-hidden">
+  <section id="partners" className="py-12 bg-white overflow-hidden">
     <div className="max-w-7xl mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

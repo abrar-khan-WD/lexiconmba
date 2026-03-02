@@ -220,7 +220,7 @@ const HeroSection = () => (
     <div className="absolute top-10 right-10 sm:top-20 sm:right-20 w-40 sm:w-72 h-40 sm:h-72 rounded-full bg-[#004E7E]/5 blur-3xl" />
     <div className="absolute bottom-10 -left-10 sm:bottom-20 sm:left-10 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-[#004E7E]/3 blur-3xl" />
 
-    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 md:py-32 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center w-full">
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-12 md:py-32 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center w-full">
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}

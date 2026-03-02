@@ -32,7 +32,7 @@ const RankingsSection = () => {
     }, []);
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-12 bg-white relative overflow-hidden">
             <style>{`
                 .hide-scroll::-webkit-scrollbar {
                     display: none;

@@ -36,7 +36,7 @@ const steps = [
 
 const AdmissionProcess = () => {
     return (
-        <section id="admission-process" className="py-12 bg-[#FCF5F5] relative overflow-hidden font-body">
+        <section id="admission-process" className="py-14 bg-[#FCF5F5] relative overflow-hidden font-body">
             {/* Background Decorative Elements */}
             <div className="absolute top-1/4 -left-64 w-[600px] h-[600px] bg-[#004E7E]/5 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-1/4 -right-64 w-[600px] h-[600px] bg-navy/5 blur-[120px] rounded-full pointer-events-none" />

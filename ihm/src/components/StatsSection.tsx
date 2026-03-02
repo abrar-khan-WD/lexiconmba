@@ -116,7 +116,7 @@ const StatsSection = () => {
   const nextImg = () => setCurrent((c) => (c + 1) % totalImages);
 
   return (
-    <section id="placements" className="py-20 bg-[#fff7b8] relative overflow-hidden">
+    <section id="placements" className="py-12 bg-[#fff7b8] relative overflow-hidden">
       {/* Decorative circles matching reference */}
       <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#FFD000] opacity-50 -mr-20 -mt-20 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#FFD000] opacity-40 -ml-16 -mb-16 pointer-events-none" />

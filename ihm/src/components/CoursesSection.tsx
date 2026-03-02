@@ -63,7 +63,7 @@ const CoursesSection = () => {
   const TRUNCATE_LEN = 300;
 
   return (
-    <section id="programs" className="py-24 bg-[#F9F2E2] relative overflow-hidden">
+    <section id="programs" className="py-12 bg-[#F9F2E2] relative overflow-hidden">
       {/* Subtle background shapes */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#002244]/5" />

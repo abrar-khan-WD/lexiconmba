@@ -10,7 +10,7 @@ import {
 const img = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18"];
 
 const InfraStructure = () => (
-  <section id="infrastructure" className="pt-24 pb-20 bg-white overflow-hidden">
+  <section id="infrastructure" className="py-12 bg-white overflow-hidden">
     <div className="max-w-7xl mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

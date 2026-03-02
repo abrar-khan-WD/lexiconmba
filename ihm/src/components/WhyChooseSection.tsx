@@ -70,13 +70,13 @@ const WhyChooseSection = () => {
     const visibleReasons = expanded ? reasons : reasons.slice(0, 8);
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-12 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-8"
                 >
                     <h2 className="font-display text-[40px] leading-tight font-black text-[#002244] uppercase tracking-wide">
                         Why Choose <span className="text-[#004E7E]">Lexicon ?</span>

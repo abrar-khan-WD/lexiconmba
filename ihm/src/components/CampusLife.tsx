@@ -220,7 +220,7 @@ const CampusLife = () => {
   }, [api]);
 
   return (
-  <section id="campus-life" className="pt-24 pb-20  bg-background overflow-hidden">
+  <section id="campus-life" className="py-12  bg-background overflow-hidden">
     <div className="max-w-7xl mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

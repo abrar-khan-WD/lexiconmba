@@ -14,7 +14,7 @@ const coreValues = [
 ];
 
 const VisionSection = () => (
-  <section className="py-24 bg-hero relative overflow-hidden">
+  <section className="py-12 bg-hero relative overflow-hidden">
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,_hsla(42,60%,55%,0.05)_0%,_transparent_60%)]" />
     <div className="max-w-7xl mx-auto px-6 relative z-10">
       <div className="grid lg:grid-cols-2 gap-12 mb-16">
