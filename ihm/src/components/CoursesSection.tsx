@@ -145,13 +145,13 @@ const CoursesSection = () => {
                 </div>
 
                 {/* Highlights Row */}
-                <div className="grid grid-cols-3 border-b border-[#002244]/10">
+                <div className="grid border-b border-[#002244]/10">
                   {prog.highlights.map((h, j) => {
                     const HIcon = h.icon;
                     return (
-                      <div key={j} className={`px-5 py-4 flex flex-col items-center gap-1.5 text-center ${j < 2 ? "border-r border-[#002244]/10" : ""}`}>
+                      <div key={j} className={`px-5 py-4 flex items-center gap-1.5 text-center ${j < 2 ? "border-r border-[#002244]/10" : ""}`}>
                         <HIcon className="w-4 h-4 text-[#004E7E]/50" />
-                        <span className="text-[#4A5568] text-xs leading-snug">{h.text}</span>
+                        <span className="text-[#4A5568] text-xs leading-snug mb-0">{h.text}</span>
                       </div>
                     );
                   })}
