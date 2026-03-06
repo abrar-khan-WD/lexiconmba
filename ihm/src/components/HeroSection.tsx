@@ -215,9 +215,9 @@ const HeroSection = () => (
     <img src="./hero/2.jpg" className="w-full h-auto object-cover md:hidden" alt="" />
 
     <div className="w-full absolute top-0 left-0 z-10 h-full items-center hidden md:flex">
-      <div className="w-full md:w-7/12">
+      <div className="w-full lg:w-7/12">
       </div>
-      <div className="w-full md:w-4/12">
+      <div className="w-full lg:w-5/12 2xl:w-4/12 lg:pe-10 2xl:pe-0">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -236,7 +236,7 @@ const HeroSection = () => (
           </div>
         </motion.div>
       </div>
-      <div className="w-full md:w-1/12">
+      <div className="w-0 2xl:w-1/12">
       </div>
     </div>
 

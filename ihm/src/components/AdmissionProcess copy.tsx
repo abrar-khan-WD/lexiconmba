@@ -56,7 +56,71 @@ const AdmissionProcess = () => {
                     </h2>
                 </motion.div>
 
-                <div className="">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+
+                    {/* Left Column: Instructions */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="relative group"
+                    >
+                        {/* Premium Instruction Card */}
+                        <div className="relative glass-card bg-white/40 backdrop-blur-xl border border-[#004E7E]/20 rounded-[2rem] p-6 md:p-8 shadow-2xl transition-all duration-500 group-hover:border-[#004E7E]/40 overflow-hidden">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#004E7E]/5 blur-2xl rounded-full -mr-16 -mt-16" />
+
+                            <div className="flex items-center gap-4 mb-5">
+                                <div className="w-12 h-12 bg-[#004E7E]/10 rounded-xl flex items-center justify-center border border-[#004E7E]/20">
+                                    <Info className="w-6 h-6 text-[#004E7E]" />
+                                </div>
+                                <h3 className="text-3xl font-display font-black text-navy-dark tracking-tight uppercase">Instructions</h3>
+                            </div>
+
+                            <div className="space-y-5">
+                                {[
+                                    { text: "The online application is for admission to programs offered in Lexicon IHM.", icon: CheckCircle2 },
+                                    { text: "Application Form Fee is Non-Refundable.", icon: CheckCircle2, bold: true },
+                                    { text: "Email ID submitted at the time of registration will be used for all correspondences until enrolment is completed. Change in Email ID will NOT be permitted.", icon: CheckCircle2, warning: true },
+                                ].map((item, idx) => (
+                                    <div key={idx} className="flex gap-5 group/item">
+                                        <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#004E7E]/10 flex items-center justify-center group-hover/item:bg-[#004E7E]/20 transition-colors">
+                                            <item.icon className="w-3.5 h-3.5 text-[#004E7E]" />
+                                        </div>
+                                        <p className={`text-slate-600 text-sm leading-relaxed ${item.bold ? 'font-bold' : ''} ${item.warning ? 'border-l-2 border-[#004E7E]/30 pl-3 py-0.5 italic' : ''}`}>
+                                            {item.text}
+                                        </p>
+                                    </div>
+                                ))}
+
+                                {/* Query System Sub-box */}
+                                <div className="bg-navy-dark rounded-2xl p-5 mt-5 border border-white/5 relative group/qms overflow-hidden">
+                                    <div className="absolute inset-0 bg-[#004E7E]/5 translate-y-full group-hover/qms:translate-y-0 transition-transform duration-700" />
+                                    <div className="relative z-10">
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <MessageSquare className="w-5 h-5 text-[#004E7E]" />
+                                            <h4 className="text-white font-display font-black text-sm uppercase tracking-widest">Query Management System</h4>
+                                        </div>
+                                        <p className="text-white/60 text-sm mb-3 leading-relaxed">
+                                            Applicants are advised to use the Lexicon MILE-QMS rather than email for a faster response.
+                                        </p>
+                                        <div className="grid gap-3">
+                                            {[
+                                                "Register and verify your email ID",
+                                                "Click on [Any Queries? Ask US] in your dashboard",
+                                                "Select query category and submit"
+                                            ].map((step, sidx) => (
+                                                <div key={sidx} className="flex items-center gap-4 py-2 border-b border-white/5 last:border-0">
+                                                    <span className="text-[#004E7E] font-display font-black text-xs">{sidx + 1}</span>
+                                                    <span className="text-white/80 text-sm font-medium">{step}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
 
                     {/* Right Column: Steps to Follow */}
                     <motion.div
@@ -68,7 +132,7 @@ const AdmissionProcess = () => {
                     >
                         <div className="relative h-full">
                             {/* Stepper Header */}
-                            <div className="relative mb-12 w-full flex justify-center ">
+                            <div className="relative mb-6 inline-block">
                                 <div className="bg-navy-dark px-10 py-5 rounded-2xl shadow-xl flex items-center gap-4 border border-white/10 group">
                                     <QrCode className="w-6 h-6 text-[#004E7E] group-hover:rotate-12 transition-transform" />
                                     <h3 className="text-white font-display font-black text-xl uppercase tracking-[0.2em]">Steps to Follow</h3>

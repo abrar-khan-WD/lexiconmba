@@ -1,6 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const HeroFormWidget = () => {
+  const [height, setHeight] = useState("500px");
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (window.innerWidth < 1500) {
+        setHeight("400px");
+      } else {
+        setHeight("500px");
+      }
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
+
   useEffect(() => {
     // only add the script once
     const existing = document.querySelector(
@@ -18,7 +35,7 @@ const HeroFormWidget = () => {
   return (
     <div
       className="npf_wgts"
-      data-height="500px"
+      data-height={height}
       data-w="fd37411573d119bbd2e5c2b82759603e"
     ></div>
   );
