@@ -15,7 +15,7 @@ export const HeroDesktop = () => {
       }}
     >
      <div className = "flex relative z-10 w-full">
-       <div className = "hero-section-text mx-auto text-white px-4 py-10 rounded-lg bg-[#f6b70073] backdrop-blur-sm">
+       <div className = "hero-section-text mx-auto text-white px-4 py-10 rounded-lg backdrop-blur-sm">
            <h2>
             Where {" "}
             <span className = "highlighted-text">
