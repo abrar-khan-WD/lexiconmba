@@ -13,7 +13,7 @@ const customTheme = {
       "fullWidth": "grid w-full grid-flow-col divide-x divide-gray-200 rounded-none text-sm font-medium shadow dark:divide-gray-700 dark:text-gray-400"
     },
     "tabitem": {
-      "base": "flex items-center justify-center rounded-t-lg p-8 w-[24%] !ms-0 bg-yellow-200 hover:bg-gray-100text-sm font-medium focus:outline-none",
+      "base": "flex items-center justify-start rounded-t-lg p-8 w-full lg:w-[24%] !ms-0 bg-yellow-200 hover:bg-gray-100text-sm font-medium focus:outline-none",
       "variant": {
         "default": {
           "base": "rounded-t-lg",
@@ -63,36 +63,56 @@ const ProgramsSection = () =>{
 
     const programs = [
         {
-            name: "1 Diploma Courses",
-            description: "Short-term specialized programs for professional skills",
+            name: "MARKETING",
+            description: "Global Marketing & Communications",
             icon: "/programs/icons/1.png",
-            content: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti delectus obcaecati. Quibusdam voluptas blanditiis doloremque ratione sint. Amet soluta consequuntur, nihil in animi error quia ipsum eius voluptates laudantium?"
+            content: [
+                "Global Marketing & Communications",
+                "Future Challenges & Trends in Marketing",
+                "Strategic Digital Marketing",
+                "International Marketing"
+            ]
         },
         {
-            name: "2 Diploma Courses",
-            description: "Short-term specialized programs for professional skills",
+            name: "HUMAN RESOURCES",
+            description: "Organizational Behavior & HRM Leadership",
             icon: "/programs/icons/1.png",
-            content: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti delectus obcaecati. Quibusdam voluptas blanditiis doloremque ratione sint. Amet soluta consequuntur, nihil in animi error quia ipsum eius voluptates laudantium?"
+            content: [
+                "Organizational Behavior & HRM Leadership",
+                "Learning & Development",
+                "Business Ethics & Governance"
+            ]
         },
         {
-            name: "3 Diploma Courses",
-            description: "Short-term specialized programs for professional skills",
+            name: "FINANCE",
+            description: "Financial Statement Analysis",
             icon: "/programs/icons/1.png",
-            content: "3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti delectus obcaecati. Quibusdam voluptas blanditiis doloremque ratione sint. Amet soluta consequuntur, nihil in animi error quia ipsum eius voluptates laudantium?"
+            content: [
+                "Financial Statement Analysis",
+                "Financial Management",
+                "Capital Investment Appraisal Techniques",
+                "Budgetary Management & Control"
+            ]
+            
         },
         {
-            name: "4 Diploma Courses",
-            description: "Short-term specialized programs for professional skills",
+            name: "BUSINESS STRATEGY",
+            description: "Introduction to Business Strategy",
             icon: "/programs/icons/1.png",
-            content: "4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti delectus obcaecati. Quibusdam voluptas blanditiis doloremque ratione sint. Amet soluta consequuntur, nihil in animi error quia ipsum eius voluptates laudantium?"
+            content: [
+                "Introduction to Business Strategy",
+                "Strategic Management",
+                "Strategic Digital Marketing",
+                "International Marketing"
+            ]
         },
     ];
 return(
 <section>
-    <div className="bg-yellow-100 max-w-8xl mx-auto py-12 px-14">
+    <div className="bg-yellow-100 max-w-8xl mx-auto py-12 lg:px-14 px-4">
         <p className='bg-red-700 py-1 px-2 w-fit rounded-[4px] text-white text-sm mb-4'>Academic Catalog</p>
         
-        <h2 className='text-4xl font-bold mb-2'>World-Class Curriculum</h2>
+        <h2 className='lg:text-4xl text-3xl font-bold mb-2 text-[#243b5e]'>World-Class Curriculum</h2>
         <p className='text-md font-light mb-8'>Explore our diverse range of 80+ programs designed to empower the next generation of global leaders</p>
         <Tabs theme={customTheme} className='flex flex-wrap w-full' aria-label="Pills" variant="pills">
             {programs.map((program, index) => (
@@ -102,13 +122,40 @@ return(
                     <h4 className='text-xl mt-2'>{program.name}</h4>
                     <p className='text-sm font-normal text-left'>{program.description}</p>
                     <div className="flex justify-between items-center w-full mt-4">
-                        <p>View Course List</p>
+                        <p>View Details</p>
                         <BsArrowRight />
                     </div>
                 </div>
             }>
                 <div className="bg-white rounded-md p-8">
-                    {program.content}
+                   <div className="flex flex-wrap">
+                        <div className="w-full lg:w-5/12 mb-4 lg:mb-0">
+                            <h4 className='text-lg font-bold mb-3'>Lexicon Phase (India - 60 Credits):</h4>
+                            <ul className='list-disc ps-6'>
+                                {program.content.map((item, idx) => (
+                                    <li key={idx} className="text-sm mb-1">{item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="lg:w-1/12 flex justify-center">
+                            <div className="w-[1px] bg-gray-300 h-full"></div>
+                        </div>
+                        <div className="w-full lg:w-6/12">
+                                <h4 className='text-lg font-bold mb-3'>USW Phase (UK - 120 Credits):</h4>
+                                <ul className='list-disc ps-6'>
+                                    <li>Global Strategy & Decision-Making</li>
+                                    <li>Project Management & Consultancy Skills</li>
+                                    <li>Global Challenges & Responsible Management</li>
+                                    <li>Capstone Project</li>
+                                    <li>Work Placement</li>
+                                    <li>Responsible Management & ESG:
+                                        <ul>
+                                            <li>A distinctive thread running through both phases, aligned with UN SDGs.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                   </div>
                 </div>
 
                 </TabItem>
