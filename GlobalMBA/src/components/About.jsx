@@ -5,7 +5,7 @@ import aboutImg from "../assets/about/about-img.png"
 export const About = () => {
   return (
     <div className="about-section flex flex-col ">
-      <div className="py-20 about-wrapper">
+      <div className=" about-wrapper">
         {/* About Lexicon Mile */}
         <>
           <h2 className="about-title mt-4">About Lexicon Mile</h2>

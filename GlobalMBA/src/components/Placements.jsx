@@ -87,7 +87,7 @@ export const Placements = () => {
 
       {/* Images Section */}
       {/* Images Section */}
-<div className="mx-auto px-4 py-12 mt-4">
+<div className="mx-auto px-4  mt-4">
   {useCarousel ? (
     <Swiper
       spaceBetween={20}
