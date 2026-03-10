@@ -9,7 +9,8 @@ lerna-debug.log*
 
 # Ignore node_modules only in specific folders
 ihm/node_modules/
-pgdm/node_modules/
+lexicon-pgdm-2026-main/node_modules/
+GlobalMBA/node_modules/
 
 # Build outputs
 dist
