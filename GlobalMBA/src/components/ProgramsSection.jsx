@@ -33,9 +33,10 @@ const ProgramsSection = () =>{
 return(
 <section>
     <div className="bg-yellow-100 max-w-8xl mx-auto py-12 px-14">
-        <p>Academic Catalog</p>
-        <h2>World-Class Curriculum</h2>
-        <p>Explore our diverse range of 80+ programs designed to empower the next generation of global leaders</p>
+        <p className='bg-red-700 py-1 px-2 w-fit rounded-[4px] text-white text-sm mb-4'>Academic Catalog</p>
+        
+        <h2 className='text-4xl font-bold mb-2'>World-Class Curriculum</h2>
+        <p className='text-md font-light'>Explore our diverse range of 80+ programs designed to empower the next generation of global leaders</p>
         <Tabs className='flex flex-wrap w-full' aria-label="Pills" variant="pills">
             {programs.map((program, index) => (
                 <TabItem key={index} className='p-0' active title={
