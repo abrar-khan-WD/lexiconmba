@@ -2,6 +2,7 @@ import React from "react";
 import { SiteNavbar } from "../components/Navbar";
 import Hero from "../components/Hero";
 import {Placements} from "../components/Placements"
+import {About} from "../components/About"
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
   <SiteNavbar />
     <Hero />
     <Placements />
+    <About />
     </div>
   );
 };
