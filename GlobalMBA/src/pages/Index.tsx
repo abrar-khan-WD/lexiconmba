@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import {Placements} from "../components/Placements"
 import {About} from "../components/About"
 import ProgramsSection from "../components/ProgramsSection";
+import Recognitions from "../components/Recognitions";
 
 const Index = () => {
   return (
@@ -12,7 +13,9 @@ const Index = () => {
       <Hero />
       <Placements />
       <About />
-    <ProgramsSection />
+   
+    <Recognitions />
+     <ProgramsSection />
     </div>
   );
 };
