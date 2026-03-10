@@ -77,9 +77,7 @@ export default function RankingsAwards() {
                     }
                 </div>
             </div>
-            <div className = " flex items-end ">
-                <img src={prize} alt="Recognition Image" className="recognition-image" data-aos="fade-up" />
-            </div>
+          
             <div className = "w-1/2 flex flex-col gap-4">
                  <h2 className = "py-6 rankings-title" data-aos="fade-up">
                     Awards
