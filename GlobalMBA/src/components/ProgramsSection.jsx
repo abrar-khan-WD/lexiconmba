@@ -127,9 +127,9 @@ return(
                     </div>
                 </div>
             }>
-                <div className="bg-white rounded-md p-8">
-                   <div className="flex flex-wrap">
-                        <div className="w-full lg:w-5/12 mb-4 lg:mb-0">
+                <div className="bg-white rounded-md overflow-hidden relative">
+                   <div className="flex flex-wrap lg:ps-8 p-8 pb-0">
+                        <div className="w-full lg:w-4/12 mb-4 lg:mb-0 lg:py-8 py-0">
                             <h4 className='text-lg font-bold mb-3'>Lexicon Phase (India - 60 Credits):</h4>
                             <ul className='list-disc ps-6'>
                                 {program.content.map((item, idx) => (
@@ -137,10 +137,10 @@ return(
                                 ))}
                             </ul>
                         </div>
-                        <div className="lg:w-1/12 flex justify-center">
+                        <div className="lg:w-1/12 justify-center py-8 hidden lg:flex">
                             <div className="w-[1px] bg-gray-300 h-full"></div>
                         </div>
-                        <div className="w-full lg:w-6/12">
+                        <div className="w-full lg:w-5/12 lg:py-8 pb-8">
                                 <h4 className='text-lg font-bold mb-3'>USW Phase (UK - 120 Credits):</h4>
                                 <ul className='list-disc ps-6'>
                                     <li>Global Strategy & Decision-Making</li>
@@ -155,7 +155,17 @@ return(
                                     </li>
                                 </ul>
                         </div>
+                        <div className="w-full lg:w-2/12">
+                                <div className="flex justify-end items-end h-full">
+                                    <img src="./programs/placeholder.png" className='w-full h-auto object-contain' alt="" />
+                                </div>
+                        </div>
                    </div>
+                        {/* <div className="absolute bottom-0 right-0 w-full flex justify-end items-end ">
+                            <div className="w-2/12">
+                                <img src="./programs/placeholder.png" className='w-full h-auto object-contain' alt="" />
+                            </div>
+                        </div> */}
                 </div>
 
                 </TabItem>
