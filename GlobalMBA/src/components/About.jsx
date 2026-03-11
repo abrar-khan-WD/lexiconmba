@@ -4,7 +4,7 @@ import aboutImg from "../assets/about/about-img.png"
 
 export const About = () => {
   return (
-    <div className="about-section flex flex-col ">
+    <div className="about-section flex flex-col" id="about">
       <div className=" about-wrapper">
         {/* About Lexicon Mile */}
         <>

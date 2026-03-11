@@ -54,14 +54,7 @@ export const SiteNavbar = () => {
 
       {/* Navigation */}
       <NavbarCollapse className="text-gray-700 font-medium">
-        <NavbarLink
-          onClick={() => scrollToSection("home")}
-          className="navbar-text cursor-pointer relative group"
-        >
-          About Us
-          <span className="custom-animation"></span>
-        </NavbarLink>
-
+        
         <NavbarLink
           onClick={() => scrollToSection("placements")}
           className="navbar-text relative inline-block cursor-pointer group"
@@ -69,6 +62,15 @@ export const SiteNavbar = () => {
           Placements
           <span className="custom-animation"></span>
         </NavbarLink>
+
+        <NavbarLink
+          onClick={() => scrollToSection("about")}
+          className="navbar-text cursor-pointer relative group"
+        >
+          About Us
+          <span className="custom-animation"></span>
+        </NavbarLink>
+
 
         <NavbarLink
           onClick={() => scrollToSection("services")}
@@ -82,7 +84,7 @@ export const SiteNavbar = () => {
           onClick={() => scrollToSection("pricing")}
           className="navbar-text cursor-pointer relative group"
         >
-          Admission Process
+          Our Recruiters
           <span className="custom-animation"></span>
         </NavbarLink>
 
@@ -90,7 +92,7 @@ export const SiteNavbar = () => {
           onClick={() => scrollToSection("contact")}
           className="navbar-text cursor-pointer relative group"
         >
-          Partners
+          Testimonials
           <span className="custom-animation"></span>
         </NavbarLink>
       </NavbarCollapse>
