@@ -17,7 +17,7 @@ export const About = () => {
             specialized training academies, the Lexicon ecosystem i s a holistic
             platform for talent development.{" "}
           </p>
-          <p className="about-description mt-6 text-lg leading-relaxed text-gray-700 mt-4">
+          <p className="about-description mt-6 text-lg leading-relaxed text-gray-700">
             At Lexicon MILE, our philosophy-One Student at a Time-has evolved
             into the global positioning of, " A Mentor Every MILE." W e invest
             deeply in the personal journey of each learner, combining academic

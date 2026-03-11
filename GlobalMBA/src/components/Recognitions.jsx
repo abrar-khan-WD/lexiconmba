@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import rankingimg from "../assets/rankings/rank.png";
 import "./Recognitions.css"
-import prize from "../assets/rankings/prize.png"
 
 const rankings = [
   {

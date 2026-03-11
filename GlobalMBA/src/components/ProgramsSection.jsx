@@ -76,7 +76,7 @@ const ProgramsSection = () =>{
         {
             name: "HUMAN RESOURCES",
             description: "Organizational Behavior & HRM Leadership",
-            icon: "/programs/icons/1.png",
+            icon: "/programs/icons/2.png",
             content: [
                 "Organizational Behavior & HRM Leadership",
                 "Learning & Development",
@@ -86,7 +86,7 @@ const ProgramsSection = () =>{
         {
             name: "FINANCE",
             description: "Financial Statement Analysis",
-            icon: "/programs/icons/1.png",
+            icon: "/programs/icons/3.png",
             content: [
                 "Financial Statement Analysis",
                 "Financial Management",
@@ -98,7 +98,7 @@ const ProgramsSection = () =>{
         {
             name: "BUSINESS STRATEGY",
             description: "Introduction to Business Strategy",
-            icon: "/programs/icons/1.png",
+            icon: "/programs/icons/4.png",
             content: [
                 "Introduction to Business Strategy",
                 "Strategic Management",
@@ -110,10 +110,21 @@ const ProgramsSection = () =>{
 return(
 <section>
     <div className="bg-yellow-100 max-w-8xl mx-auto py-12 lg:px-14 px-4">
-        <p className='bg-red-700 py-1 px-2 w-fit rounded-[4px] text-white text-sm mb-4'>Academic Catalog</p>
+        <p className='bg-red-700 py-1 px-2 w-fit rounded-[4px] text-white text-sm mb-4'>Curriculum & Pedagogy</p>
         
-        <h2 className='lg:text-4xl text-3xl font-bold mb-2 text-[#243b5e]'>World-Class Curriculum</h2>
-        <p className='text-md font-light mb-8'>Explore our diverse range of 80+ programs designed to empower the next generation of global leaders</p>
+        <h2 className='lg:text-5xl text-4xl font-bold mb-2 text-[#243b5e]'>Program Offered</h2>
+        <p className='text-md font-light mb-4'>PROGRAM IN ACADEMIC PARTNERSHIP WITH UNIVERSITY OF SOUTH WALES, UK</p>
+
+        <p className="text-3xl font-bold mb-4 text-blue-950">Master in Business Administration Global, (60 +120 credits)</p>
+                <p className="text-sm font-normal mb-8 text-justify">The University of South Wales, in association with the
+                    Lexicon Management Institute of Leadership and
+                    Excellence, offer MBA Global Program that provides you with an opportunity to gain three to four
+                    months
+                    internship experience with companies in the UK and overseas. The Master's program is curated in academic partnership
+                    with the University of South Wales (USW), UK,
+                    accredited and recognized by the Privy Council. Educational programs at USW are UK-certified
+                    educational
+                    programs by Quality Assurance Agency.</p>
         <Tabs theme={customTheme} className='flex flex-wrap w-full' aria-label="Pills" variant="pills">
             {programs.map((program, index) => (
                 <TabItem key={index} className='p-0' active title={

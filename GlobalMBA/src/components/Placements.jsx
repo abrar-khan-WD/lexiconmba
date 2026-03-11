@@ -58,11 +58,11 @@ export const Placements = () => {
   return (
     <div className="placements-section">
       {/* Stats Section */}
-      <div className="flex wrapper-placement justify-center mx-auto px-4 py-12">
+      <div className="flex wrapper-placement justify-center mx-auto px-0 lg:px-4 py-0 lg:py-12">
         <div className="placements-text-container fade-in">
-          <span className="placements-label">Career Success</span>
-          <h2 className="placements-title mt-4">Record Breaking Placement 2025</h2>
-          <p className="placements-desc mt-4">
+          <span className="placements-label mb-0 lg:mb-6">Career Success</span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-blue-950 mt-4">Record Breaking Placement 2025</h2>
+          <p className="text-sm lg:text-lg mt-4">
             Our students consistently secure placements with leading organizations across industries.
             With strong industry partnerships, skill-focused training, and career mentorship, 
             NIMS University ensures graduates are job-ready and confident to succeed in a competitive global workforce.

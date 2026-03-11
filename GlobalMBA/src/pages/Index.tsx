@@ -2,9 +2,16 @@ import React from "react";
 import { SiteNavbar } from "../components/Navbar";
 import Hero from "../components/Hero";
 import {Placements} from "../components/Placements"
-import {About} from "../components/About"
 import ProgramsSection from "../components/ProgramsSection";
 import Recognitions from "../components/Recognitions";
+import About from "../components/About/About";
+import Awards from "../components/Awards/Awards";
+import BackToTop from "../components/Footer/BackToTop";import { ModalProvider } from "../components/Footer/ModalContext";import FormModal from "../components/Footer/FormModal";
+import Footer from '../components/Footer/Footer';
+// import Programs from "../components/Programs/Programs";
+import Recruiters from "../components/Recruiters/Recruiters";
+import CampusLife from "../components/CampusLife/CampusLife";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const Index = () => {
   return (
@@ -13,9 +20,15 @@ const Index = () => {
       <Hero />
       <Placements />
       <About />
-   
-    <Recognitions />
-     <ProgramsSection />
+      <Awards />
+      {/* <Programs/> */}
+      <ProgramsSection />
+      <Recruiters />
+      <CampusLife/>
+      <Testimonials/>
+      <BackToTop/>
+      <FormModal/>
+      <Footer/>
     </div>
   );
 };
