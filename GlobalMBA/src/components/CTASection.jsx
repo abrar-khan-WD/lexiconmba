@@ -19,7 +19,7 @@ return (
         <div className="relative z-10 ">
             <div className="w-full flex justify-center flex-wrap">
                 {/* Quote */}
-                <blockquote className="text-white text-2xl lg:text-4xl font-bold leading-tight w-full lg:w-10/12 uppercase text-start mb-4 lg:mb-0">
+                <blockquote className="text-white text-2xl lg:text-3xl font-bold w-full lg:w-10/12 uppercase text-start mb-4 lg:mb-0">
                     The best connections don't come from one country <br />
                      they come from every corner of the world.
                 </blockquote>

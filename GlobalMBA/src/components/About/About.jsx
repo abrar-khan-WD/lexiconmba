@@ -3,7 +3,7 @@ import React from "react";
 const About = () =>{
 return(
 <section>
-    <div className=" pb-12 max-w-8xl px-4 lg:px-20 ">
+    <div className=" pb-12 max-w-8xl px-4 lg:px-20 " id="about">
         <div className="flex flex-wrap-reverse items-center ">
             <div className="w-full lg:w-1/2 lg:pe-12">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-blue-950 lg:mt-0 mt-4 hidden lg:block">About Lexicon Mile</h2>

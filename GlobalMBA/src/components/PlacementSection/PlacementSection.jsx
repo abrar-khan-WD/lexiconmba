@@ -3,7 +3,7 @@ import React from "react";
 const PlacementSection = () =>{
 return(
 <section>
-    <div className="px-4 lg:px-20 pt-12 pb-6">
+    <div className="px-4 lg:px-20 pt-12 pb-6" id="placements">
         <div className="flex flex-wrap">
             <div className="w-full lg:w-6/12 flex flex-col items-start mb-8 lg:mb-0">
                 {/* <p className="px-4 py-1 bg-yellow-500 text-white text-sm mb-4">Career Success</p> */}

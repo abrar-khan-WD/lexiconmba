@@ -18,7 +18,7 @@ const Recruiters = () => {
   };
 
   return (
-    <section className="">
+    <section className="" id="recruiters">
       <div className="py-12 container ">
         <div className="flex justify-center mb-8">
             <h2 className="text-4xl lg:text-5xl text-blue-950 font-bold">Our Recruiters</h2>

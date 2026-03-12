@@ -3,7 +3,7 @@ import React from 'react';
 const Programs = () =>{
 return(
 <section>
-    <div className="max-w-8xl pb-12 px-4 lg:px-20">
+    <div className="max-w-8xl pb-12 px-4 lg:px-20" id="program">
         <div className="flex flex-wrap-reverse relative">
             <div className="w-full lg:w-6/12">
                 <img src="./programs/bg.png" className="w-full object-contain rounded-lg" alt="" />

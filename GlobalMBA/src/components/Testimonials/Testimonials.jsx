@@ -32,7 +32,7 @@ const Testimonials = () =>{
     }, [emblaApi]);
 
     return(
-        <section>
+        <section id="testimonials">
             <div className="container py-12">
                 <div className="flex justify-center pb-8">
                     <h2 className="text-4xl lg:text-5xl text-blue-950 font-bold">Student Testimonials</h2>

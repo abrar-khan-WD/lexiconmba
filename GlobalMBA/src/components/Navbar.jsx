@@ -74,15 +74,15 @@ export const SiteNavbar = () => {
 
 
         <NavbarLink
-          onClick={() => scrollToSection("services")}
+          onClick={() => scrollToSection("program")}
           className="navbar-text cursor-pointer relative group"
         >
-          Programs
+          Program Offered
           <span className="custom-animation"></span>
         </NavbarLink>
 
         <NavbarLink
-          onClick={() => scrollToSection("pricing")}
+          onClick={() => scrollToSection("recruiters")}
           className="navbar-text cursor-pointer relative group"
         >
           Our Recruiters
@@ -90,7 +90,7 @@ export const SiteNavbar = () => {
         </NavbarLink>
 
         <NavbarLink
-          onClick={() => scrollToSection("contact")}
+          onClick={() => scrollToSection("testimonials")}
           className="navbar-text cursor-pointer relative group"
         >
           Testimonials
