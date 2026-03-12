@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TabItem, Tabs } from "flowbite-react";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsChevronDown, BsChevronUp } from "react-icons/bs";
 
 const customTheme = {
   "base": "flex flex-col gap-2",
@@ -61,6 +61,12 @@ const customTheme = {
 
 const ProgramsSection = () =>{
 
+    const [activeAccordion, setActiveAccordion] = useState(null);
+
+    const toggleAccordion = (index) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+    };
+
     const programs = [
         {
             name: "MARKETING",
@@ -115,17 +121,7 @@ return(
         <h2 className='lg:text-5xl text-4xl font-bold mb-2 text-[#243b5e]'>Program Offered</h2>
         <p className='text-md font-light mb-4'>PROGRAM IN ACADEMIC PARTNERSHIP WITH UNIVERSITY OF SOUTH WALES, UK</p>
 
-        <p className="text-3xl font-bold mb-4 text-blue-950">Master in Business Administration Global, (60 +120 credits)</p>
-                <p className="text-sm font-normal mb-8 text-justify">The University of South Wales, in association with the
-                    Lexicon Management Institute of Leadership and
-                    Excellence, offer MBA Global Program that provides you with an opportunity to gain three to four
-                    months
-                    internship experience with companies in the UK and overseas. The Master's program is curated in academic partnership
-                    with the University of South Wales (USW), UK,
-                    accredited and recognized by the Privy Council. Educational programs at USW are UK-certified
-                    educational
-                    programs by Quality Assurance Agency.</p>
-        <Tabs theme={customTheme} className='flex flex-wrap w-full' aria-label="Pills" variant="pills">
+        <Tabs theme={customTheme} className='flex-wrap w-full hidden lg:flex' aria-label="Pills" variant="pills">
             {programs.map((program, index) => (
                 <TabItem key={index} className='p-0' active title={
                 <div className='text-black flex flex-col justify-center items-start'>
@@ -172,16 +168,62 @@ return(
                                 </div>
                         </div>
                    </div>
-                        {/* <div className="absolute bottom-0 right-0 w-full flex justify-end items-end ">
-                            <div className="w-2/12">
-                                <img src="./programs/placeholder.png" className='w-full h-auto object-contain' alt="" />
-                            </div>
-                        </div> */}
                 </div>
 
                 </TabItem>
             ))}
             </Tabs>
+
+            {/* Mobile Accordion */}
+            <div className="lg:hidden">
+                {programs.map((program, index) => (
+                    <div key={index} className="bg-white rounded-md mb-4 overflow-hidden shadow-sm">
+                        <button
+                            onClick={() => toggleAccordion(index)}
+                            className="w-full p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                        >
+                            <div className='text-black flex items-center gap-3'>
+                                <img src={program.icon} className='w-10' alt="" />
+                                <h4 className='text-lg font-semibold'>{program.name}</h4>
+                            </div>
+                            {activeAccordion === index ? (
+                                <BsChevronUp className="text-gray-500" />
+                            ) : (
+                                <BsChevronDown className="text-gray-500" />
+                            )}
+                        </button>
+                        {activeAccordion === index && (
+                            <div className="px-6 pb-6 pt-2">
+                                <div className="flex flex-wrap">
+                                    <div className="w-full mb-4">
+                                        <h4 className='text-lg font-bold mb-3'>Lexicon Phase (India - 60 Credits):</h4>
+                                        <ul className='list-disc ps-6'>
+                                            {program.content.map((item, idx) => (
+                                                <li key={idx} className="text-sm mb-1">{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="w-full">
+                                        <h4 className='text-lg font-bold mb-3'>USW Phase (UK - 120 Credits):</h4>
+                                        <ul className='list-disc ps-6'>
+                                            <li>Global Strategy & Decision-Making</li>
+                                            <li>Project Management & Consultancy Skills</li>
+                                            <li>Global Challenges & Responsible Management</li>
+                                            <li>Capstone Project</li>
+                                            <li>Work Placement</li>
+                                            <li>Responsible Management & ESG:
+                                                <ul>
+                                                    <li>A distinctive thread running through both phases, aligned with UN SDGs.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
                 
             {/* <TabItem className='p-0' active title={
                 <div className='bg-white rounded-md text-black p-8 flex flex-col justify-center items-start'>
