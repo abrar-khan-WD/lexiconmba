@@ -115,10 +115,10 @@ const ProgramsSection = () =>{
     ];
 return(
 <section>
-    <div className="bg-yellow-100 max-w-8xl mx-auto py-12 lg:px-14 px-4">
+    <div className="bg-yellow-100 max-w-8xl mx-auto pt-12 lg:py-12 lg:px-14 px-4">
         <p className='bg-red-700 py-1 px-2 w-fit rounded-[4px] text-white text-sm mb-4'>Curriculum & Pedagogy</p>
         
-        <h2 className='lg:text-5xl text-4xl font-bold mb-2 text-[#243b5e]'>Program Offered</h2>
+        <h2 className='lg:text-5xl text-4xl font-bold mb-2 text-[#243b5e]'>Specializations Offered</h2>
         <p className='text-md font-light mb-4'>PROGRAM IN ACADEMIC PARTNERSHIP WITH UNIVERSITY OF SOUTH WALES, UK</p>
 
         <Tabs theme={customTheme} className='flex-wrap w-full hidden lg:flex' aria-label="Pills" variant="pills">
@@ -135,7 +135,7 @@ return(
                 </div>
             }>
                 <div className="bg-white rounded-md overflow-hidden relative">
-                   <div className="flex flex-wrap lg:ps-8 p-8 pb-0">
+                   <div className="flex flex-wrap lg:ps-8 pb-0">
                         <div className="w-full lg:w-4/12 mb-4 lg:mb-0 lg:py-8 py-0">
                             <h4 className='text-lg font-bold mb-3'>Lexicon Phase (India - 60 Credits):</h4>
                             <ul className='list-disc ps-6'>
@@ -162,7 +162,7 @@ return(
                                     </li>
                                 </ul>
                         </div>
-                        <div className="w-full lg:w-2/12">
+                        <div className="w-full lg:w-2/12 hidden lg:block">
                                 <div className="flex justify-end items-end h-full">
                                     <img src="./programs/placeholder.png" className='w-full h-auto object-contain' alt="" />
                                 </div>
@@ -225,21 +225,10 @@ return(
                 ))}
             </div>
                 
-            {/* <TabItem className='p-0' active title={
-                <div className='bg-white rounded-md text-black p-8 flex flex-col justify-center items-start'>
-                    <img src="/programs/icons/1.png" className='w-14' alt="" />
-                    <h4 className='text-xl mt-2'>Diploma Courses</h4>
-                    <p className='text-sm font-normal'>Short-term specialized programs for professional skills</p>
-                    <div className="flex justify-between items-center w-full mt-4">
-                        <p>View Course List</p>
-                        <BsArrowRight />
-                    </div>
-                </div>
-            }>
-                <div className="bg-white rounded-md p-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti delectus obcaecati. Quibusdam voluptas blanditiis doloremque ratione sint. Amet soluta consequuntur, nihil in animi error quia ipsum eius voluptates laudantium?
-                </div>
-            </TabItem> */}
+           
+            <div className="flex items-end px-4 pt-4 lg:hidden  ">
+                                    <img src="./programs/placeholder.png" className='w-full h-auto object-contain' alt="" />
+                                </div>
         
     </div>
 </section>

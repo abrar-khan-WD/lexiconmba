@@ -6,10 +6,10 @@ const { openModal } = useEnquireModal();
 
 return (
 <section className=" pb-12 lg:px-20 px-4">
-    <div className="relative rounded-lg overflow-hidden p-4 lg:p-8">
+    <div className="relative rounded-lg overflow-hidden p-4 lg:px-8 lg:py-12">
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: "url('./hero/1.png')",
+          backgroundImage: "url('./cta/1.jpg')",
         }}></div>
 
         {/* Overlay */}
@@ -19,11 +19,11 @@ return (
         <div className="relative z-10 ">
             <div className="w-full flex justify-center flex-wrap">
                 {/* Quote */}
-                <blockquote className="text-white text-2xl lg:text-4xl font-bold leading-tight w-full lg:w-8/12 text-start mb-4 lg:mb-0">
-                    Collaboration is key. In the MBA Global program, we break down borders and build connections that
-                    last a lifetime
+                <blockquote className="text-white text-2xl lg:text-4xl font-bold leading-tight w-full lg:w-10/12 uppercase text-start mb-4 lg:mb-0">
+                    The best connections don't come from one country <br />
+                     they come from every corner of the world.
                 </blockquote>
-                <div className="w-full lg:w-4/12 flex items-center lg:justify-end justify-center">
+                <div className="w-full lg:w-2/12 flex items-center lg:justify-end justify-center">
                 
                 {/* CTA Button */}
                 <button onClick={openModal}

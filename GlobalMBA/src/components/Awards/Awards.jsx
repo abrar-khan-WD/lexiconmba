@@ -20,18 +20,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
     loop: true,
     align: "start",
     slidesToScroll: 1,
-    dragFree: false,
-    breakpoints: {
-      '(min-width: 1024px)': {
-        slidesToScroll: 4
-      },
-      '(min-width: 768px) and (max-width: 1023px)': {
-        slidesToScroll: 3
-      },
-      '(min-width: 481px) and (max-width: 767px)': {
-        slidesToScroll: 2
-      }
-    }
+    dragFree: false
   },
   [autoplay]
 )
