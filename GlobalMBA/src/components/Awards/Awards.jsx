@@ -20,7 +20,18 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
     loop: true,
     align: "start",
     slidesToScroll: 1,
-    dragFree: false
+    dragFree: false,
+    breakpoints: {
+      '(min-width: 1024px)': {
+        slidesToScroll: 4
+      },
+      '(min-width: 768px) and (max-width: 1023px)': {
+        slidesToScroll: 3
+      },
+      '(min-width: 481px) and (max-width: 767px)': {
+        slidesToScroll: 2
+      }
+    }
   },
   [autoplay]
 )
@@ -48,43 +59,43 @@ const awardsData = [
     {
         title: "Best B-School in Leadership Excellence",
         desc: "BW Education Future of Management Awards 2023",
-        img: "1"
+        img: "2"
     },
     {
         title: "Best Private Management Institute in India for Placements",
         desc: "CEGR 2022",
-        img: "1"
+        img: "3"
     },
     {
         title: "Best Management for Institute for Placements",
         desc: "Integrated Chambers of Commerce and Industry , 2020",
-        img: "1"
+        img: "4"
     },
     {
         title: "Dewang Mehta National Education Award",
         desc: "Best Emerging B-School",
-        img: "1"
+        img: "5"
     },
     {
         title: "BBC Knowledge Education Leadership Award",
         desc: "Best Academic & Industry Interface",
-        img: "1"
+        img: "5"
     },
     {
         title: "AsiaOne World’s Greatest Brand Award",
         desc: "Singapore",
-        img: "1"
+        img: "5"
     },
     {
         title: "Lead Lab Centre of Excellence Award",
         desc: "For nurturing youth leadership",
-        img: "1"
+        img: "5"
     },
 ];
 
 return (
 <section>
-    <div className="container pb-12">
+    <div className="max-w-8xl px-4 lg:px-20 pb-12">
         <div className="flex justify-center mb-8">
             <h2 className="text-4xl lg:text-5xl font-bold text-blue-950">Rankings & Awards</h2>
         </div>
@@ -92,7 +103,7 @@ return (
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                    { awardsData.map((award, index)=>(
-                     <div key={index} className="embla__slide">
+                     <div key={index} className="embla__slide w-[20%]">
                         <div className="award-card">
                             <img src={`/awards/${award.img}.png`} className="award-img h-[60px]" />
                             <h4 className="award-title mb-0">{award.title}</h4>

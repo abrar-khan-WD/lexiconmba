@@ -11,9 +11,6 @@ export const NpfWidget = () => {
 
   return (
     <div className="">
-        <h2 className = "npf-widget-heading font-bold text-white backdrop-blur-sm px-4 lg:py-4 py-2">
-            Admission Enquiry Form
-        </h2>
       <div
         className="npf_wgts"
         data-height="500px"

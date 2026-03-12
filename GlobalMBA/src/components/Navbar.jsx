@@ -7,11 +7,12 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
+import { useEnquireModal } from "../contexts/EnquireModalContext";
 import Logo from "../assets/black_Logo.svg";
 import "./Navbar.css"
-import {useModal} from '../components/Footer/ModalContext';
-
 export const SiteNavbar = () => {
+  const { openModal } = useEnquireModal();
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({
@@ -19,7 +20,6 @@ export const SiteNavbar = () => {
       block: "start",
     });
   };
-  const { openModal } = useModal();
 
   return (
     <Navbar
@@ -41,7 +41,8 @@ export const SiteNavbar = () => {
       <div className="md-btn-space flex items-center gap-3 flex-nowrap ml-auto md:hidden">
 
         <button
-          type="button"  onClick={openModal}
+          type="button" 
+          onClick={openModal}
           className="enquire-btn shrink-0 whitespace-nowrap !bg-[#003b64] !text-white px-5 py-2 rounded-lg shadow-md hover:!bg-[#002b4a] transition-all duration-300 hover:scale-105 cursor-pointer"
           style={{ backgroundColor: "#F6B700", color: "#ffffff" }}
         >
@@ -101,7 +102,8 @@ export const SiteNavbar = () => {
       <div className="md-btn-space hidden md:flex md:order-2 items-center gap-3 flex-nowrap">
 
         <button
-          type="button"  onClick={openModal}
+          type="button"
+          onClick={openModal}
           className="enquire-btn shrink-0 whitespace-nowrap !bg-[#003b64] !text-white px-5 py-2 rounded-lg shadow-md hover:!bg-[#002b4a] transition-all duration-300 hover:scale-105"
           style={{ backgroundColor: "#F6B700", color: "#ffffff" }}
         >

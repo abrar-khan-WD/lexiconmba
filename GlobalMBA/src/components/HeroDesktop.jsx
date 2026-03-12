@@ -6,36 +6,18 @@ import "./npfWidget"
 
 export const HeroDesktop = () => {
   return (
-    <div
-      className="relative overflow-x-hidden hero-section flex py-20 px-8 text-center min-h-screen "
-      style={{
-        backgroundImage: "url('./hero/1.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "top",
-      }}
-    >
-     <div className = "flex relative z-10 w-full">
-       {/* <div className = "hero-section-text mx-auto text-white px-4 py-10 rounded-lg backdrop-blur-sm">
-           <h2>
-            Where {" "}
-            <span className = "highlighted-text">
-                Management Education
-                </span>{" "}
-                
-                 Meets Real Placements, Real Mentors, & Real Growth.
-
-           </h2>
-           <hr className = "hero-seperator" />
-            <h4>
-                Lexicon MBA| Admissions Open 2026-27
-
-
-            </h4>
-       </div> */}
-       <div className = "npf-widget-container  w-full flex justify-end items-center px-4">
-        <NpfWidget />
-       </div>
-     </div>
-    </div>
+    <section>
+      <div class="relative w-full">
+        <img src="./hero/1.png" alt="" />
+        <div class="absolute top-0 left-0 w-full h-full flex items-center justify-end pr-10">
+          <div class="w-4/12">
+            <h2 className = "font-bold text-white bg-blue-950 text-center px-4 lg:py-4 py-2 w-full">
+              Admission Enquiry Form
+            </h2>
+            <NpfWidget />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };

@@ -50,7 +50,7 @@
 
 @media (max-width: 1024px) {
   .embla__slide {
-    flex: 0 0 33.33%;
+    flex: 0 0 20%;
   }
 }
 
